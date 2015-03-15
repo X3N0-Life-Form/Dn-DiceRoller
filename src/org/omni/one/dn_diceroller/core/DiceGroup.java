@@ -12,10 +12,10 @@ public class DiceGroup implements Serializable {
     /**
      * Dice type --> number of dice
      */
-    private Map<Dice, Integer> contents;
+    private Map<Die, Integer> contents;
 
     public DiceGroup() {
-        contents = new TreeMap<Dice, Integer>();
+        contents = new TreeMap<Die, Integer>();
     }
 
 

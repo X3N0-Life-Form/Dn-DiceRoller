@@ -13,28 +13,28 @@ public class DiceFactory {
     private DiceFactory() {
     }
 
-    public static Dice createDice(DefaultDiceTypes type) {
+    public static Die createDice(DefaultDiceTypes type) {
         switch (type) {
             case D20:
-                return new Dice(1, 20);
+                return new Die(1, 20);
             case D12:
-                return new Dice(1, 12);
+                return new Die(1, 12);
             case D10:
-                return new Dice(1, 10);
+                return new Die(1, 10);
             case D8:
-                return new Dice(1, 8);
+                return new Die(1, 8);
             case D6:
-                return new Dice(1, 6);
+                return new Die(1, 6);
             case D4:
-                return new Dice(1, 4);
+                return new Die(1, 4);
             case COIN:
-                return new Dice(1, 2);
+                return new Die(1, 2);
             default:
-                return new Dice(1, 6);
+                return new Die(1, 6);
         }
     }
 
-    public static Dice createDice(int min, int max) {
-        return new Dice(min, max);
+    public static Die createDice(int min, int max) {
+        return new Die(min, max);
     }
 }
